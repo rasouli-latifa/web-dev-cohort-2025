@@ -1,0 +1,108 @@
+/* Roina css codes start*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #1f6ae1;
+  --secondary-color: #0b1f3b;
+  --third-color: #f3ecdc;
+  --fourth-color: #ff6b5a;
+  --fifth-color: #6fd1c7;
+  --sixth-color: #2fa36b;
+  --seventh-color: #f5a623;
+  --eight-color: #fff;
+  --nine-color: #6b7280;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* header start */
+header {
+  /* background-color: var(--fourth-color); */
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.logo {
+  /* background-color: bisque; */
+  margin: 0 4rem;
+  color: var(--eight-color);
+  font-size: 3rem;
+  font-family: cursive;
+}
+
+.navbar {
+  /* background-color: aquamarine; */
+  margin: 0 14.5rem;
+  width: 100vw;
+}
+
+.navbar nav ul {
+  display: flex;
+  flex-direction: row;
+}
+.navbar nav ul li {
+  list-style: none;
+}
+.navbar nav ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-decoration: none;
+  font-family: cursive;
+  font-size: 1.2rem;
+  color: var(--eight-color);
+}
+
+/* header end  */
+
+/* hero section start */
+main .hero {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(58, 52, 52, 0.2),
+      rgba(56, 50, 50, 0.2)
+    ),
+    url("../Ghazni/images/غزنی/majestic-mosque-islamic-new-year-celebration-with-fantasy-architecture\ \(1\).jpg");
+  background-position: center;
+}
+
+.hero-para {
+  text-align: center;
+  position: relative;
+  top: 10rem;
+}
+
+.hero-para h1,
+p {
+  color: var(--eight-color);
+  padding: 0.6rem 4.5rem;
+  display: flex;
+  justify-content: start;
+}
+
+.hero-para p {
+  font-size: 1.3rem;
+}
+/* hero section end */
+
+/* Roina css codes end */
