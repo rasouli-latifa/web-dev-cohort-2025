@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery Full Width</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  color: #222;
+}
+
+/*  NAVBAR */
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  color: white;
+}
+
+.navbar a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  font-weight: normal;
+}
+
+/* ===== HERO ===== */
+.hero {
+  height: 420px;
+  background: url(images/somaiya-images/bc-image/bc-image.jpg)
+    center/cover no-repeat;
+}
+
+.hero-overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 14px;
+}
+
+/* ===== GALLERY ===== */
+.gallery-section {
+  padding: 80px 60px;
+}
+
+.gallery-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 26px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Special card */
+.gallery-card {
+  position: relative;
+}
+
+.gallery-card img {
+  height: 100%;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111;
+  color: #ccc;
+  padding: 60px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+footer h3,
+footer h4 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+footer a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">LOD<span>Z</span></div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Gallery</a>
+    <a href="#">Food</a>
+    <a href="#">Attraction</a>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-overlay">
+    <h1>Gallery Full Width</h1>
+    <p>Home / Gallery</p>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery-section">
+  <h2>From Our Gallery</h2>
+
+  <div class="gallery-grid">
+
+    <img src="images/somaiya-images/hero-images/download (1).jpg" />
+    <img src="images/somaiya-images/hero-images/download.jpg" />
+    <img src="images/somaiya-images/hero-images/Herat, Afghanistan 🇦🇫 (1).jpg" />
+
+    <img src="images/somaiya-images/hero-images/Herat-people.jpg" />
+
+    <div class="gallery-card">
+      <img src="images/somaiya-images/Historical places/download (5).jpg" />
+      <div class="overlay-text">
+        <h4>Original oil painting.</h4>
+        <p>Modern Impressionism</p>
+      </div>
+    </div>
+
+    <img src="images/somaiya-images/" />
+
+    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" />
+    <img src="https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee" />
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" />
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>LOD<span>Z</span></h3>
+      <p>
+        Providing exceptional museum experiences and cultural education
+        through art and history.
+      </p>
+    </div>
+
+    <div>
+      <h4>Quick Link</h4>
+      <a href="#">About</a>
+      <a href="#">Event</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div>
+      <h4>Contact Us</h4>
+      <p>California, USA</p>
+      <p>+1 222 345 678</p>
+      <p>info@lodz.com</p>
+    </div>
+
+    <div>
+      <h4>Open Hours</h4>
+      <p>Mon–Fri: 9am – 6pm</p>
+      <p>Saturday: 10am – 5pm</p>
+      <p>Sunday: Closed</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 LODZ Museum. All Rights Reserved
+  </div>
+</footer>
+
+</body>
+</html>
